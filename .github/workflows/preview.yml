@@ -1,0 +1,13 @@
+name: Preview
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  changes:
+    name: "Check for docs changes"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello!!!"
